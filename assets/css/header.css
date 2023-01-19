@@ -1,0 +1,30 @@
+header {
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(157, 157, 157);
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu_list {
+  padding-bottom: 3px;
+  display: flex;
+  gap: 10px;
+}
+.menu_list_item {
+  padding-right: 10px;
+  list-style: none;
+}
+.menu_list_item:not(:last-child) {
+  border-right: 2px solid rgb(62, 62, 62);
+}
+.menu_list_item_link {
+  transition: all 0.5s;
+}
+.menu_list_item_link:hover {
+  color: rgba(245, 222, 179, 0.654);
+  border-bottom: 2px solid wheat;
+}

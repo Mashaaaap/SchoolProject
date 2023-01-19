@@ -1,0 +1,40 @@
+.footer {
+    width: 100%;
+    text-align: center;
+    border-radius: 15px;
+    border-top: 3px solid $textColor;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+
+        @media (max-width: 558px) {
+            flex-direction: column;
+        }
+
+        img {
+            width: 60px;
+            height: 60px;
+            
+        }
+    }
+}
+
+.me {
+
+     p:not(:first-child) {
+        margin: 0;
+    }
+
+    &_title {
+        color: $textColor;   
+    }
+}
+
+.info {
+    &_title {
+        color: $textColor;  
+    }
+}
