@@ -23,15 +23,25 @@
         border-radius: 15px;
         border: 2px solid $textColor;
 
+        &:hover {
+            width: 43%;
+            height: 525px;  
+        }
+
         @media (max-width: 1244px) {
             width: 400px;
             height: 500px;
             font-size: 17px;
+
+            &:hover {
+                width: 400px;
+                height: 500px; 
+            }
+
         }
 
-        &:hover {
-            width: 43%;
-            height: 525px;  
+        @media (max-width: 425px) {
+            font-size: 13px; 
         }
     }
 }
